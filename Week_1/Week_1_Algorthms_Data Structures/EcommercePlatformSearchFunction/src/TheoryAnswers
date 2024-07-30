@@ -1,0 +1,40 @@
+E-commerce Platform Search Function
+
+
+Understanding Asymptotic Notation:
+
+1 -> Explain Big O notation and how it helps in analyzing algorithms.
+
+Ans ->
+Big O notation is a mathematical notation used to describe the upper bound of an algorithm's runtime or space requirements in the worst-case scenario. It helps in analyzing and comparing the efficiency of algorithms by focusing on their growth rates relative to the input size (n).
+
+2 -> Describe the best, average, and worst-case scenarios for search operations.
+
+Ans ->
+Best Case: The scenario where the algorithm performs the fewest possible operations. For example, in a search operation, this would be finding the target element on the first try.
+
+Average Case: The scenario that represents the expected runtime for a random input. It considers all possible inputs and their probabilities.
+
+Worst Case: The scenario where the algorithm performs the maximum possible operations. For search, this would be when the target element is at the end of the list or not present at all.
+
+
+Analysis
+
+1 -> Compare the time complexity of linear and binary search algorithms.
+
+Ans ->
+Linear Search:
+
+Best Case: O(1) - The target element is the first element in the array.
+Average Case: O(n) - The target element is somewhere in the middle or randomly distributed.
+Worst Case: O(n) - The target element is the last element or not present at all.
+
+Binary Search:
+
+Best Case: O(1) - The target element is the middle element in the sorted array.
+Average Case: O(log n) - The array is repeatedly divided in half until the target element is found.
+Worst Case: O(log n) - The target element is not present, and the array is divided until no elements are left.
+
+2 -> Discuss which algorithm is more suitable for your platform and why.
+Ans ->
+For an e-commerce platform, where search performance is critical, binary search is more suitable due to its logarithmic time complexity, which significantly reduces search time for large inventories. Sorting the array can be done once and maintained with efficient insertions. For dynamic datasets with frequent insertions and deletions, data structures like balanced binary search trees or self-balancing trees (e.g., AVL trees, Red-Black trees) can be considered for maintaining sorted order with efficient search capabilities.

@@ -1,0 +1,39 @@
+Library Management System
+
+
+
+Understand Search Algorithms:
+
+1 -> Explain linear search and binary search algorithms.
+
+Ans -> 
+Linear Search: Linear search is a simple search algorithm that checks each element of the list sequentially until the desired element is found or the list ends.
+
+Binary Search: Binary search is an efficient search algorithm that works on sorted lists. It repeatedly divides the search interval in half, comparing the target value to the middle element of the interval. If the target value is smaller, it searches the left half; if larger, it searches the right half.
+
+Analysis
+
+1 -> Compare the time complexity of linear and binary search.
+
+Ans -> 
+Linear Search:
+
+Best Case: O(1) - The target element is the first element in the array.
+Average Case: O(n) - The target element is somewhere in the middle or randomly distributed.
+Worst Case: O(n) - The target element is the last element or not present at all.
+
+Binary Search:
+
+Best Case: O(1) - The target element is the middle element in the sorted array.
+Average Case: O(log n) - The array is repeatedly divided in half until the target element is found.
+Worst Case: O(log n) - The target element is not present, and the array is divided until no elements are left.
+
+
+2 -> Discuss when to use each algorithm based on the data set size and order.
+
+Ans -> 
+Linear Search:
+Linear search is ideal for unsorted lists as it does not require any specific order. For small data sets, the performance difference between linear and binary search is minimal, making the simplicity of linear search preferable. It is also more efficient when searches are infrequent, as there is no need to sort the list.
+
+Binary Search:
+Binary search is highly efficient for sorted lists, with a time complexity of O(log n). It significantly reduces search time for large data sets by repeatedly halving the search interval. When searches are frequent and the data is sorted or can be maintained in sorted order, binary search is the better choice due to its superior efficiency.

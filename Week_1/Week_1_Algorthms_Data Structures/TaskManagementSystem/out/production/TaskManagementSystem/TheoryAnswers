@@ -1,0 +1,54 @@
+Task Management System
+
+
+
+Understand Linked Lists:
+
+1 -> Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+
+Ans -> 
+Types of Linked Lists
+
+Singly Linked List:
+
+Structure: Each node contains data and a reference (or pointer) to the next node in the sequence.
+Traversal: Can be traversed in one direction only, from the head to the last node.
+Memory Usage: Uses less memory per node compared to doubly linked lists due to only one reference.
+
+Doubly Linked List:
+
+Structure: Each node contains data and two references, one to the next node and one to the previous node.
+Traversal: Can be traversed in both directions, forward and backward.
+Memory Usage: Uses more memory per node compared to singly linked lists due to an extra reference.
+
+
+
+Analysis
+
+1 -> Analyze the time complexity of each operation.
+
+Ans -> 
+Add Task:
+
+Best Case: O(1) - Adding to an empty list.
+Average/Worst Case: O(n) - Traversing to the end of the list to add the task.
+
+Search Task:
+
+Best Case: O(1) - The task is the first element.
+Average/Worst Case: O(n) - The task could be anywhere in the list or not present.
+
+Traverse Tasks:
+
+Best/Average/Worst Case: O(n) - Must traverse the entire list to print all tasks.
+
+Delete Task:
+
+Best Case: O(1) - The task is the first element.
+Average/Worst Case: O(n) - The task could be anywhere in the list or not present.
+
+
+2 -> Discuss the advantages of linked lists over arrays for dynamic data.
+
+Ans -> 
+

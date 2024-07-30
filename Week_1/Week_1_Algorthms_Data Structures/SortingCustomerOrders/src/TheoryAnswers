@@ -1,0 +1,48 @@
+Sorting Customer Orders
+
+
+
+Understanding Sorting Algorithms:
+
+1 -> Explain why data structures and algorithms are essential in handling large inventories.
+
+Ans ->
+Bubble Sort: Bubble Sort is a simple comparison-based sorting algorithm. It works by repeatedly stepping through the list to be sorted, comparing each pair of adjacent items, and swapping them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+
+Insertion Sort: Insertion Sort builds the sorted list one item at a time. It takes each element from the input and finds the appropriate place for it within the sorted list, which it maintains on the left side of the input list.
+
+Quick Sort: Quick Sort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+Merge Sort: Merge Sort is a divide-and-conquer algorithm that splits the list into equal halves until each half contains a single element, and then merges the halves back together in sorted order.
+
+
+Analysis
+
+1 -> Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+
+Ans ->
+Bubble Sort:
+
+Best Case: O(n) - The array is already sorted.
+Average Case: O(n^2) - Each element is compared with every other element.
+Worst Case: O(n^2) - The array is sorted in reverse order.
+
+Quick Sort:
+
+Best Case: O(n log n) - The pivot splits the list into two equal halves.
+Average Case: O(n log n) - The pivot splits the list into reasonably balanced parts.
+Worst Case: O(n^2) - The pivot is the smallest or largest element every time (rare if good pivot selection strategies like random pivot are used).
+
+
+2 -> Discuss why Quick Sort is generally preferred over Bubble Sort.
+
+Ans ->
+Efficiency: Quick Sort has a significantly better average and best-case performance (O(n log n)) compared to Bubble Sort's average and worst-case performance (O(n^2)).
+
+Scalability: Quick Sort handles larger datasets more efficiently, making it suitable for applications like e-commerce platforms with potentially large numbers of orders.
+
+Practical Performance: Despite the worst-case scenario, Quick Sort can be optimized with good pivot selection strategies, making it practically faster than Bubble Sort for most inputs.
+
+Memory Usage: Quick Sort generally uses less memory compared to other O(n log n) algorithms like Merge Sort, which requires additional space for merging.
+
+In summary, Quick Sort's superior average-case performance and practical efficiency make it the preferred choice for sorting tasks in scenarios like sorting customer orders by total price.

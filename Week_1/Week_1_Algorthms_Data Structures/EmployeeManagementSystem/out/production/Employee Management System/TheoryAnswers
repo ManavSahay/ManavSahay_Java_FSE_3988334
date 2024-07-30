@@ -1,0 +1,67 @@
+Employee Management System
+
+
+Understand Array Representation:
+
+1 -> Explain how arrays are represented in memory and their advantages.
+
+Ans -> 
+Arrays are contiguous blocks of memory where each element is stored sequentially. This means that the elements are stored in adjacent memory locations, and the size of each element is uniform. The index of the array is used to calculate the memory address of each element, allowing for efficient access.
+
+Advantages of Arrays
+
+Direct Access: Arrays provide direct access to elements using indices, resulting in O(1) time complexity for accessing elements.
+
+Simplicity: Arrays are simple and easy to use, making them a fundamental data structure in many programming languages.
+
+Contiguous Memory Allocation: The contiguous allocation of memory improves cache performance, leading to faster access times.
+
+
+Analysis
+
+1 -> Analyze the time complexity of each operation (add, search, traverse, delete).
+
+Ans -> 
+Add Employee:
+
+Best Case: O(1) - Adding an employee is always a constant-time operation if there is space available.
+Worst Case: O(1) - Same as best case because adding does not depend on the number of elements already in the array.
+
+Search Employee:
+
+Best Case: O(1) - The employee is the first element in the array.
+Average Case: O(n) - The employee could be anywhere in the array.
+Worst Case: O(n) - The employee is the last element or not present at all.
+
+Traverse Employees:
+
+Best Case: O(n) - Always iterates through all elements to traverse.
+Average Case: O(n) - Same as best case.
+Worst Case: O(n) - Same as best case.
+
+Delete Employee:
+
+Best Case: O(1) - The employee is the last element in the array.
+Average Case: O(n) - On average, it will need to shift half of the elements to delete.
+Worst Case: O(n) - The employee is the first element, requiring all elements to be shifted.
+
+2 -> Discuss the limitations of arrays and when to use them.
+
+Ans -> 
+Limitations of Arrays
+
+Fixed Size: Arrays have a fixed size defined at creation. Once the array is full, no more elements can be added unless a new, larger array is created and the existing elements are copied over.
+
+Inefficient Deletion: Deleting an element requires shifting all subsequent elements, resulting in O(n) time complexity in the worst case.
+
+Inefficient Insertion: Inserting an element at a specific position (other than the end) requires shifting all subsequent elements, also resulting in O(n) time complexity.
+
+Static Nature: The size of the array must be known beforehand, which can be a limitation if the number of employees varies significantly over time.
+
+When to Use Arrays
+
+Static Data: Arrays are suitable when the number of elements is known and does not change frequently.
+
+Direct Access: When direct access to elements using indices is required, arrays are highly efficient.
+
+Memory Contiguity: Arrays are preferred when the contiguous memory allocation is needed for performance reasons, such as in real-time systems.

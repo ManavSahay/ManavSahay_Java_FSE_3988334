@@ -1,0 +1,24 @@
+Financial Forecasting
+
+
+
+Understand Recursive Algorithms:
+
+1 -> Explain the concept of recursion and how it can simplify certain problems.
+
+Ans -> 
+Recursion is a technique where a function calls itself in order to solve smaller instances of the same problem. It simplifies certain problems by breaking them down into more manageable subproblems, each of which is solved recursively until a base case is reached. This approach can make complex problems easier to conceptualize and implement, particularly when the problem naturally fits a recursive pattern.
+
+
+Analysis
+
+1 -> Discuss the time complexity of your recursive algorithm.
+
+Ans -> 
+The time complexity of this recursive algorithm is O(n), where n is the number of years. This is because each recursive call decreases the number of years by one, leading to a linear relationship between the number of years and the number of calls.
+
+
+2 -> Explain how to optimize the recursive solution to avoid excessive computation.
+
+Ans -> 
+To optimize the recursive solution and avoid excessive computation, especially in cases where the same subproblems are repeatedly solved, we can use memoization. Memoization involves storing the results of expensive function calls and reusing them when the same inputs occur again.
